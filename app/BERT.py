@@ -21,7 +21,7 @@ model = AutoModelForQuestionAnswering.from_pretrained(name)
 def matchParaAnswer(keyword):
 	topic = ['contact','application timeline','application process','application fees','selection process',
 			 'required document', 'kaist']
-	with open(d + '/topKeywords.json') as f:
+	with open('topKeywords.json') as f:
 		topKeywords = json.load(f)
 	value = 0
 	index = -1
@@ -65,7 +65,7 @@ def Answer(question, keyword):
 		return "Cannot find the answer! Please contact us"
 	else:
 		# load data
-		data = pd.read_csv(d + "/data.csv")
+		data = pd.read_csv("data.csv")
 		# retrieve the paragraph contains answer
 		paragraph = data.iloc[indexPara]['DETAIL']
 		# paragraph[:100] used when we do not have a great computer

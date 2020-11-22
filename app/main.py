@@ -8,7 +8,7 @@ def response():
     if request.method == 'POST':
         question = request.form['question']
         keyword = request.form['keyword']
-        # Answer(question, keyword)
+        Answer(question, keyword)
         try:
             data = {'response': Answer(question, keyword)}
             return jsonify(data)
