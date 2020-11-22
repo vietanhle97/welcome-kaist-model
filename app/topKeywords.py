@@ -91,12 +91,12 @@ def topImportant(text):
 # print("=====")
 # data.iloc[5]
 if __name__ == "__main__":
-  data = pd.read_csv("data.csv")
+  data = pd.read_csv(d + "/app/data.csv")
   top_result = []
   for i in range(len(data)):
     temp = topImportant(data.iloc[i])
     top_result.append(temp)
-  with open("topKeywords.json","w") as file:
+  with open(d + "/app/topKeywords.json","w") as file:
     json.dump(top_result,file)
 
 
