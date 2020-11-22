@@ -10,9 +10,11 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 numpy==1.19.1
-Pillow==7.2.0
 requests==2.24.0
 torch==1.6.0+cpu
-torchvision==0.7.0+cpu
 urllib3==1.25.10
 Werkzeug==1.0.1
+scikit-learn==0.23.1
+transformers==3.5.1
+nltk==3.5
+pandas==1.0.5
