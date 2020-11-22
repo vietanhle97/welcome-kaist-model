@@ -3,7 +3,7 @@ from app.BERT import Answer
 
 app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/answer', methods=['POST'])
 def response():
     if request.method == 'POST':
         question = request.form['question']
