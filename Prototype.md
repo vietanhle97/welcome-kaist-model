@@ -19,6 +19,8 @@ Note that this should not cover all features you have; focus on the most excitin
 
 ## URL of your prototype: 
 
+https://welcome-kaist.herokuapp.com/
+
 A live version of the prototype for evalation. 
 
 Course staff will run your prototype to do a heuristic evaluation for grading.
