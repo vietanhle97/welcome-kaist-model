@@ -4,11 +4,15 @@
 
 (1) the problem you're addressing, 
 
+Scattered information only in a whole documents, student do not know where to ask because most of the time students sending questions to the wrong department overwhelming administration staffs.
+
 (2) what your solution is, 
+
+Our solution is chatbot.
 
 (3) what unique approach you're taking in your solution (how it's different from other similar solutions). 
 
- This summary will be used as a blurb on the project gallery.
+We use NLP model to tackle the issue.
 
 
 ## Instruction: 
@@ -16,6 +20,8 @@
 Give a quick tour of the interface, and also show off some of the highlights of the interface. 
 
 Note that this should not cover all features you have; focus on the most exciting and important parts. Use screenshots and callouts.
+
+![screenshot_ex](https://ibb.co/rdDY2ps)
 
 ## URL of your prototype: 
 
