@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import json
-from BERT import Answer
+from app.BERT import Answer
 
 app = Flask(__name__)
 
@@ -9,7 +9,6 @@ def response():
     if request.method == 'POST':
         question = request.json['question']
         keyword = request.json['keyword']
-        Answer(question, keyword)
         try:
         	data = Answer(question, keyword)
         	response = {'response': data['answer'], 'topic':data['topic'], 'info':data['info']}
