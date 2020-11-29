@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import json
-from app.BERT import Answer
+from BERT import Answer
 
 app = Flask(__name__)
 
@@ -11,9 +11,10 @@ def response():
         keyword = request.json['keyword']
         Answer(question, keyword)
         try:
-            data = {'response': Answer(question, keyword)}
-            return jsonify(data)
+        	data = Answer(question, keyword)
+        	response = {'response': data['answer'], 'topic':data['topic'], 'info':data['info']}
+        	return jsonify(response)
         except:
-            return jsonify({'error': 'Internal System Error.'})
+        	return jsonify({'error': 'Internal System Error.'})
 
 
